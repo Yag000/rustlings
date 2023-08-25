@@ -46,7 +46,6 @@ mod tests {
             _ => Err("Expected borrowed value"),
         }
     }
-
     #[test]
     fn owned_no_mutation() -> Result<(), &'static str> {
         // We can also pass `slice` without `&` so Cow owns it directly.
